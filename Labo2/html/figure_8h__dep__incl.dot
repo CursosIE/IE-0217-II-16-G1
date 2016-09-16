@@ -1,0 +1,26 @@
+digraph "figure.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="figure.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="circulo.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$circulo_8h.html",tooltip="Clase derivada de la clase base Figura. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="circulo.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$circulo_8cpp.html",tooltip="Implementacion de la clase derivada Circulo. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="figure.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figure_8cpp.html",tooltip="Implementacion de la clase Figura. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Main del proyecto. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="cuadrado.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuadrado_8h.html",tooltip="Clase derivada de la clase base Figura. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="cuadrado.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuadrado_8cpp.html",tooltip="Implementacion de la clase derivada Cuadrado. "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="triangulo.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$triangulo_8h.html",tooltip="Clase derivada de la clase base Figura. "];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="triangulo.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$triangulo_8cpp.html",tooltip="Implementacion de la clase derivada Triangulo. "];
+}

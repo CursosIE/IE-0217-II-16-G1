@@ -1,0 +1,12 @@
+digraph "Figura"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Figura",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Circulo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_circulo.html",tooltip="Clase derivada Circulo. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Cuadrado",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cuadrado.html",tooltip="Clase derivada Cuadrado. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Triangulo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_triangulo.html",tooltip="Clase derivada Triangulo. "];
+}
