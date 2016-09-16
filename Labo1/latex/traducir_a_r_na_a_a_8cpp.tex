@@ -1,0 +1,99 @@
+\section{traducir\-A\-R\-Na\-A\-A.\-cpp File Reference}
+\label{traducir_a_r_na_a_a_8cpp}\index{traducir\-A\-R\-Na\-A\-A.\-cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}}
+
+
+Este programa traduce una cadena A\-R\-N a A\-A.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf traducir\-A\-R\-Na\-A\-A} (int argc, char $\ast$A\-R\-N)
+\begin{DoxyCompactList}\small\item\em Funcion traducir\-A\-R\-Na\-A\-A. \end{DoxyCompactList}\item 
+int {\bf main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Funcion main. \end{DoxyCompactList}\item 
+int {\bf verificar\-Codon} (char $\ast$$\ast$A\-R\-N, int size)
+\begin{DoxyCompactList}\small\item\em Funcion verificar\-Codon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Este programa traduce una cadena A\-R\-N a A\-A. \begin{DoxyAuthor}{Author}
+Brizuela M, Morera B 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2 Septiembre 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{traducir\-A\-R\-Na\-A\-A.\-cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}!main@{main}}
+\index{main@{main}!traducirARNaAA.cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{traducir_a_r_na_a_a_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Funcion main. 
+
+Funcion recibe dos parámetros.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Contiene el numero de argumentos que se han introducido. \\
+\hline
+{\em argv} & Array de punteros a caracteres. \\
+\hline
+\end{DoxyParams}
+\index{traducir\-A\-R\-Na\-A\-A.\-cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}!traducir\-A\-R\-Na\-A\-A@{traducir\-A\-R\-Na\-A\-A}}
+\index{traducir\-A\-R\-Na\-A\-A@{traducir\-A\-R\-Na\-A\-A}!traducirARNaAA.cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}}
+\subsubsection[{traducir\-A\-R\-Na\-A\-A}]{\setlength{\rightskip}{0pt plus 5cm}int traducir\-A\-R\-Na\-A\-A (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{A\-R\-N}
+\end{DoxyParamCaption}
+)}\label{traducir_a_r_na_a_a_8cpp_ae9b2e674edafef6f506c035b25f7db7c}
+
+
+Funcion traducir\-A\-R\-Na\-A\-A. 
+
+Funcion encargada de traducir la secuencia A\-R\-N a A\-A.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & tipo entero, cantidad de elementos. \\
+\hline
+{\em A\-R\-N} & char$\ast$, que contiene un conjunto de tres bases nitrogenadas (A, G, C, U). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aminoácido correspondiente al A\-R\-N recibido. 
+\end{DoxyReturn}
+\index{traducir\-A\-R\-Na\-A\-A.\-cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}!verificar\-Codon@{verificar\-Codon}}
+\index{verificar\-Codon@{verificar\-Codon}!traducirARNaAA.cpp@{traducir\-A\-R\-Na\-A\-A.\-cpp}}
+\subsubsection[{verificar\-Codon}]{\setlength{\rightskip}{0pt plus 5cm}int verificar\-Codon (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{A\-R\-N, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{traducir_a_r_na_a_a_8cpp_a9214dcaddb21f50fe3ba181f303cb9e6}
+
+
+Funcion verificar\-Codon. 
+
+Funcion encargada de verificar si la secuencia inicia y termina con codones de parada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\-R\-N} & tipo char$\ast$$\ast$, contiene la secuencia A\-R\-N total. \\
+\hline
+{\em size} & tipo entero, contiene el tamaño de la secuencia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna cero si cumple la condicion de codones de parada, de lo contrario retorna uno. 
+\end{DoxyReturn}
