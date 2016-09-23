@@ -1,0 +1,122 @@
+\section{Fraccion Class Reference}
+\label{class_fraccion}\index{Fraccion@{Fraccion}}
+
+
+Clase \doxyref{Fraccion}{p.}{class_fraccion}.  
+
+
+
+
+{\ttfamily \#include $<$fraccion.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Fraccion} ()
+\begin{DoxyCompactList}\small\item\em Constructor default. \end{DoxyCompactList}\item 
+{\bf Fraccion} (int num, int den)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\+Fraccion} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf Fraccion} {\bf operator+} (const {\bf Fraccion} \&Otra\+Fraccion)
+\begin{DoxyCompactList}\small\item\em Sobrecarga de operadores. \end{DoxyCompactList}\item 
+{\bf Fraccion} {\bfseries operator-\/} (const {\bf Fraccion} \&Otra\+Fraccion)\label{class_fraccion_ad9614512d0c223348e9e42cf6c04e2d7}
+
+\item 
+{\bf Fraccion} {\bfseries operator$\ast$} (const {\bf Fraccion} \&Otra\+Fraccion)\label{class_fraccion_ae324b78ceb90f6e4f672e1d737cd048c}
+
+\item 
+{\bf Fraccion} {\bfseries operator/} (const {\bf Fraccion} \&Otra\+Fraccion)\label{class_fraccion_add443bd2aab137ee33f60b6f13afee66}
+
+\item 
+void {\bfseries operator$\sim$} ()\label{class_fraccion_a6ba2dac78e5ef60d6860d39ba3489bb1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries num}\label{class_fraccion_a5a380fe036d7cd33b440e4b3bd44ccf2}
+
+\item 
+int {\bfseries den}\label{class_fraccion_abf563263de538adef73a0b29339027fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const {\bf Fraccion} \&Otra\+Fraccion)\label{class_fraccion_a07b0d47768bf7ba73df16bcab9d6a4af}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase \doxyref{Fraccion}{p.}{class_fraccion}. 
+
+Clase posee dos constructores, uno que no posee parametros y otro que recibe dos parametros enteros; ademas un destructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\subsubsection[{Fraccion}]{\setlength{\rightskip}{0pt plus 5cm}Fraccion\+::\+Fraccion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}
+
+
+Constructor default. 
+
+Constructor vacio, no recibe parametros. \index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\subsubsection[{Fraccion}]{\setlength{\rightskip}{0pt plus 5cm}Fraccion\+::\+Fraccion (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{int}]{den}
+\end{DoxyParamCaption}
+)}\label{class_fraccion_a8d88b0a272ea7bdacd217e7dbca3ee8d}
+
+
+Constructor con parametros. 
+
+Constructor recive dos enteros. 
+\begin{DoxyParams}{Parameters}
+{\em num} & Entero que representa el numerador de la fraccion. \\
+\hline
+{\em den} & Entero que representa el denominador de la fraccion. \\
+\hline
+\end{DoxyParams}
+\index{Fraccion@{Fraccion}!````~Fraccion@{$\sim$\+Fraccion}}
+\index{````~Fraccion@{$\sim$\+Fraccion}!Fraccion@{Fraccion}}
+\subsubsection[{$\sim$\+Fraccion}]{\setlength{\rightskip}{0pt plus 5cm}Fraccion\+::$\sim$\+Fraccion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_fraccion_abb2ec579092e5bc50e7c3644ea718084}
+
+
+Destructor. 
+
+Destructor vacio. 
+
+\subsection{Member Function Documentation}
+\index{Fraccion@{Fraccion}!operator+@{operator+}}
+\index{operator+@{operator+}!Fraccion@{Fraccion}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fraccion} Fraccion\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fraccion} \&}]{Otra\+Fraccion}
+\end{DoxyParamCaption}
+)}\label{class_fraccion_a8517734c0ad211a3839155a1cf8c45e6}
+
+
+Sobrecarga de operadores. 
+
+Implementacion de la sobrecarga de operadores.
+
+Los operadores a sobrecargar son las cuatro operaciones basicas algebraicas mas un operador de muestra de informacion.
+
+Se implementan la sobrecarga de cada operador antes declarados en \doxyref{matriz.\+h}{p.}{matriz_8h}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf fraccion.\+h}\item 
+{\bf fraccion.\+cpp}\end{DoxyCompactItemize}

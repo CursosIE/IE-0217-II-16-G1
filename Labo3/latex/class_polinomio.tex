@@ -1,0 +1,118 @@
+\section{Polinomio Class Reference}
+\label{class_polinomio}\index{Polinomio@{Polinomio}}
+
+
+Clase \doxyref{Polinomio}{p.}{class_polinomio}.  
+
+
+
+
+{\ttfamily \#include $<$polinomio.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Polinomio} ()
+\begin{DoxyCompactList}\small\item\em Constructor default. \end{DoxyCompactList}\item 
+{\bf Polinomio} (double $\ast$polinomio, int dimension)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+virtual {\bf $\sim$\+Polinomio} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf Polinomio} {\bf operator+} (const {\bf Polinomio} \&Otro\+Polinomio)
+\begin{DoxyCompactList}\small\item\em Sobrecarga de operadores. \end{DoxyCompactList}\item 
+{\bf Polinomio} {\bfseries operator-\/} (const {\bf Polinomio} \&Otro\+Polinomio)\label{class_polinomio_a5b9595e8258b37f0bcaddab12a9a4b70}
+
+\item 
+{\bf Polinomio} {\bfseries operator$\ast$} (const {\bf Polinomio} \&Otro\+Polinomio)\label{class_polinomio_a22c35a8c3b3bca20fe28d65f866bf605}
+
+\item 
+{\bf Polinomio} {\bfseries operator/} (const {\bf Polinomio} \&Otro\+Polinomio)\label{class_polinomio_a878dc9cb164cf10c0112d5b6635c6042}
+
+\item 
+void {\bfseries operator$\sim$} ()\label{class_polinomio_a3433445a715a473c4dd433e1d1248406}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries dimension}\label{class_polinomio_ad18524b313d5a4eb0db2a57362c33c9d}
+
+\item 
+double $\ast$ {\bfseries polinomio}\label{class_polinomio_a24bc2f0a8232797eacfa105cfae645ff}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const {\bf Polinomio} \&Otro\+Polinomio)\label{class_polinomio_a9bdf4199ba117cee400dedacb757fab7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase \doxyref{Polinomio}{p.}{class_polinomio}. 
+
+Clase posee dos constructores, uno que no posee parametros y otro que recibe dos parametros; ademas un destructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Polinomio@{Polinomio}!Polinomio@{Polinomio}}
+\index{Polinomio@{Polinomio}!Polinomio@{Polinomio}}
+\subsubsection[{Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}Polinomio\+::\+Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_polinomio_ac910fd7c555f384a2b12a8f498acd2f4}
+
+
+Constructor default. 
+
+Constructor vacio, no recibe parametros. \index{Polinomio@{Polinomio}!Polinomio@{Polinomio}}
+\index{Polinomio@{Polinomio}!Polinomio@{Polinomio}}
+\subsubsection[{Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}Polinomio\+::\+Polinomio (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{polinomio, }
+\item[{int}]{dimension}
+\end{DoxyParamCaption}
+)}\label{class_polinomio_a07b4bba84051b5bb06bd9f21c8fffdbd}
+
+
+Constructor con parametros. 
+
+Constructor recibe dos parámetros, un double$\ast$ y un entero. 
+\begin{DoxyParams}{Parameters}
+{\em polinomio} & Double$\ast$ de la dirección del arreglo con los coeficientes del polinomio. \\
+\hline
+{\em dimension} & Entero que representa la dimensión del arreglo polinomio. \\
+\hline
+\end{DoxyParams}
+\index{Polinomio@{Polinomio}!````~Polinomio@{$\sim$\+Polinomio}}
+\index{````~Polinomio@{$\sim$\+Polinomio}!Polinomio@{Polinomio}}
+\subsubsection[{$\sim$\+Polinomio}]{\setlength{\rightskip}{0pt plus 5cm}Polinomio\+::$\sim$\+Polinomio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polinomio_a1023ada36c95fce6698316a632fdcc1c}
+
+
+Destructor. 
+
+Destructor vacio. 
+
+\subsection{Member Function Documentation}
+\index{Polinomio@{Polinomio}!operator+@{operator+}}
+\index{operator+@{operator+}!Polinomio@{Polinomio}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Polinomio} Polinomio\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Polinomio} \&}]{Otro\+Polinomio}
+\end{DoxyParamCaption}
+)}\label{class_polinomio_afc00c189dbae97fb02a26b2f9b0109f8}
+
+
+Sobrecarga de operadores. 
+
+Los operadores a sobrecargar son las cuatro operaciones basicas algebraicas mas un operador de muestra de informacion. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf polinomio.\+h}\item 
+{\bf polinomio.\+cpp}\end{DoxyCompactItemize}

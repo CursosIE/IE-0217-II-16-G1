@@ -1,0 +1,3 @@
+all: genera los ejecutables.
+clean: elimina los ejecutables.
+run: corre el ejecutable.
