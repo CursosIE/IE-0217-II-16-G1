@@ -7,10 +7,10 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "fraccion.h"
-#include "calculadora.h"
-#include "matriz.h"
-#include "polinomio.h"
+#include "fraccion/fraccion.h"
+#include "calculadora/calculadora.h"
+#include "matriz/matriz.h"
+#include "polinomio/polinomio.h"
 
 
 using namespace std;
@@ -18,7 +18,7 @@ using namespace std;
 /**	@brief Funcion Main.
  *
  * En esta funcion se crea calculadoras de varias clases (Fraccion, Polinomio y Matriz), aplicando operaciones algebraicas con sobrecarga de operadores.
- * 
+ *
  */
 int main(int argc, char** argv) {
 
@@ -44,28 +44,28 @@ int main(int argc, char** argv) {
         ~Polisub;
         calc_poli.print(Polimul);
         calc_poli.print(Polidiv);
-       
+
 	int fila = 2;
-	int columna = 2; 
-	
+	int columna = 2;
+
 	double **ptrDatosMatriz = new double*[fila];
 	for(int i = 0; i < fila; i++){
 		ptrDatosMatriz[i] = new double[columna];
 	}
-	
+
 	for(int j = 0; j < fila; j++){
 		for(int k = 0; k < columna; k++){
 			ptrDatosMatriz[j][k] = 2.0;
 		}
 	}
-	
+
 	Calculadora<Matriz> calc1;
 	Matriz mat1(fila,columna,ptrDatosMatriz);
 	Matriz mat2(fila,columna,ptrDatosMatriz);
 	Matriz mat3;
 	mat3 = calc1.mul(mat1, mat2);
 	~mat3;
-	
+
 	calc1.print(mat3);
 
 
