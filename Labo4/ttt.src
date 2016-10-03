@@ -82,7 +82,7 @@ public class TicTacToe {
             c =  randomInt(0, 3);					Inicializacion: 1 + 1
             
             result = move(player, r, c);				Accesos y funcion: 1 + 1 + 1 + 1
-            if(result != 0)						Comparacion: k
+            if(result != 0)						Comparacion: k #Donde k es el tiempo de la funcion 'move', k = 36*n**2 + 24*n + 15
             {
                 print("player " + result + " won.");			Impresion: 1 + 1
                 end = true;						Inicializacion: 1			--> k * (k + 13)
