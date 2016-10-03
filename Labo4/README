@@ -1,0 +1,2 @@
+   En la carpeta se encuentra los script de graficacion de las funciones de tiempo y la complejidad O; los cuales se corren con el comando "make".
+   En el archivo ttt.src dado por el profe, se encuentra el analisis utilizadoo para obtener la funcion de tiempo. Solo suman los que le preceden "-->", los otros son pasos intermedios.
