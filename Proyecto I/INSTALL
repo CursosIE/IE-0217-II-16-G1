@@ -1,3 +1,0 @@
-all: genera los ejecutables.
-clean: elimina los ejecutables.
-run: corre la interfaz grafica y los ejecutables.
