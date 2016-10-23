@@ -1,0 +1,125 @@
+\section{kruskal Namespace Reference}
+\label{namespacekruskal}\index{kruskal@{kruskal}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def {\bf crear\+Archivo\+Salida}
+\begin{DoxyCompactList}\small\item\em Método crear\+Archivo\+Salida. \end{DoxyCompactList}\item 
+def {\bf grabar\+Archivo\+Salida}
+\begin{DoxyCompactList}\small\item\em Función grabar\+Archivo\+Salida. \end{DoxyCompactList}\item 
+def {\bf dibujar\+Circulo}
+\begin{DoxyCompactList}\small\item\em Función dibujar\+Circulo. \end{DoxyCompactList}\item 
+def {\bf re\+Config\+Kruskal}
+\begin{DoxyCompactList}\small\item\em Función re\+Config\+Kruskal. \end{DoxyCompactList}\item 
+def {\bf correr\+Kruskal}
+\begin{DoxyCompactList}\small\item\em Función correr\+Kruskal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bf parametros\+Cpp} = '{\bf kruskal}/conf\+Txt/entrada\+Cpp.\+txt'
+\item 
+string {\bf salida\+Interfaz} = '{\bf kruskal}/conf\+Txt/pesos\+Kruskal.\+txt'
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{kruskal@{kruskal}!correr\+Kruskal@{correr\+Kruskal}}
+\index{correr\+Kruskal@{correr\+Kruskal}!kruskal@{kruskal}}
+\subsubsection[{correr\+Kruskal}]{\setlength{\rightskip}{0pt plus 5cm}def kruskal.\+correr\+Kruskal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacekruskal_a3951be6c050f58d6251fdb77f6473419}
+
+
+Función correr\+Kruskal. 
+
+Función corre la interfaz, crea el screen, lee los eventos constantemente y aplica las acciones como respuesta a estos eventos. \index{kruskal@{kruskal}!crear\+Archivo\+Salida@{crear\+Archivo\+Salida}}
+\index{crear\+Archivo\+Salida@{crear\+Archivo\+Salida}!kruskal@{kruskal}}
+\subsubsection[{crear\+Archivo\+Salida}]{\setlength{\rightskip}{0pt plus 5cm}def kruskal.\+crear\+Archivo\+Salida (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacekruskal_abd9d362bce4c6a796643fa2910dff7a8}
+
+
+Método crear\+Archivo\+Salida. 
+
+Crea un archivo, el cual es la entrada para el binario escrito en C++. Contiene la cantidad de vertices y los pesos para la matriz de adyacencia. Este método no recibe parametros. \index{kruskal@{kruskal}!dibujar\+Circulo@{dibujar\+Circulo}}
+\index{dibujar\+Circulo@{dibujar\+Circulo}!kruskal@{kruskal}}
+\subsubsection[{dibujar\+Circulo}]{\setlength{\rightskip}{0pt plus 5cm}def kruskal.\+dibujar\+Circulo (
+\begin{DoxyParamCaption}
+\item[{}]{screen, }
+\item[{}]{posicion}
+\end{DoxyParamCaption}
+)}\label{namespacekruskal_ae2cac023eb7f9133a31492c429e2dab6}
+
+
+Función dibujar\+Circulo. 
+
+Función encargada de dibujar círculos de color aleatoreo. Recibe dos parametros. 
+\begin{DoxyParams}{Parameters}
+{\em screen} & Pantalla donde se dibujará el círculo. \\
+\hline
+{\em posicion} & Posicion del círculo en la pantalla. \\
+\hline
+\end{DoxyParams}
+\index{kruskal@{kruskal}!grabar\+Archivo\+Salida@{grabar\+Archivo\+Salida}}
+\index{grabar\+Archivo\+Salida@{grabar\+Archivo\+Salida}!kruskal@{kruskal}}
+\subsubsection[{grabar\+Archivo\+Salida}]{\setlength{\rightskip}{0pt plus 5cm}def kruskal.\+grabar\+Archivo\+Salida (
+\begin{DoxyParamCaption}
+\item[{}]{cant\+Vertices, }
+\item[{}]{vector\+Peso\+Arista}
+\end{DoxyParamCaption}
+)}\label{namespacekruskal_a2f90cab9408a2d5bbe25ee2c8afc4b42}
+
+
+Función grabar\+Archivo\+Salida. 
+
+Guarda la salida en el archivo que servira como parametros de entrada para el binario. 
+\begin{DoxyParams}{Parameters}
+{\em cant\+Vertices} & Entero cantidad de vertices del grafo. \\
+\hline
+{\em vector\+Peso\+Arista} & Vector que contiene \\
+\hline
+\end{DoxyParams}
+\index{kruskal@{kruskal}!re\+Config\+Kruskal@{re\+Config\+Kruskal}}
+\index{re\+Config\+Kruskal@{re\+Config\+Kruskal}!kruskal@{kruskal}}
+\subsubsection[{re\+Config\+Kruskal}]{\setlength{\rightskip}{0pt plus 5cm}def kruskal.\+re\+Config\+Kruskal (
+\begin{DoxyParamCaption}
+\item[{}]{contador\+Vertices, }
+\item[{}]{posicion\+Vertices\+Grafo, }
+\item[{}]{screen, }
+\item[{}]{pesos\+Aristas, }
+\item[{}]{puntos\+Linea, }
+\item[{}]{Datos}
+\end{DoxyParamCaption}
+)}\label{namespacekruskal_ae330482f830c2f1563ddf80b5052e047}
+
+
+Función re\+Config\+Kruskal. 
+
+Función encargada de dibujar el árbol de mínima expansión. No edita el dibujo antes ingresado, solo repinta con color blanco las aristas que pertenecen al árbol resultante. 
+\begin{DoxyParams}{Parameters}
+{\em contador\+Vertices} & Cantidad de vértices del grafo dibujado. \\
+\hline
+{\em posicion\+Vertices\+Grafo} & Arreglo de enteros de posiciones cartesianas en la pantalla de los vértices. \\
+\hline
+{\em screen} & Pantalla donde se dibuja el grafo. \\
+\hline
+{\em pesos\+Aristas} & Arreglo de enteros de los pesos de las aristas. \\
+\hline
+{\em puntos\+Linea} & Arreglo de enteros de posiciones cartesianas en la pantalla de los puntos de las aristas, puntos de posición de un vértice de inicio y un vértice final. \\
+\hline
+{\em Datos} & Arreglo de los pesos de las aristas ordenados, este vector es el que se escribe en el archivo de salida. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{kruskal@{kruskal}!parametros\+Cpp@{parametros\+Cpp}}
+\index{parametros\+Cpp@{parametros\+Cpp}!kruskal@{kruskal}}
+\subsubsection[{parametros\+Cpp}]{\setlength{\rightskip}{0pt plus 5cm}string kruskal.\+parametros\+Cpp = '{\bf kruskal}/conf\+Txt/entrada\+Cpp.\+txt'}\label{namespacekruskal_ac2a8fd3a25fff6c201109d832686d06e}
+\index{kruskal@{kruskal}!salida\+Interfaz@{salida\+Interfaz}}
+\index{salida\+Interfaz@{salida\+Interfaz}!kruskal@{kruskal}}
+\subsubsection[{salida\+Interfaz}]{\setlength{\rightskip}{0pt plus 5cm}string kruskal.\+salida\+Interfaz = '{\bf kruskal}/conf\+Txt/pesos\+Kruskal.\+txt'}\label{namespacekruskal_a12deff067bb8a2f2fa5a237d606bcf3f}

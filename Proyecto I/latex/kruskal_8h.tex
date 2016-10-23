@@ -1,0 +1,193 @@
+\section{kruskal.\+h File Reference}
+\label{kruskal_8h}\index{kruskal.\+h@{kruskal.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf create\+Graph} (char $\ast$$\ast$argv, int $\ast$$\ast$matriz\+Adyacencia)
+\begin{DoxyCompactList}\small\item\em Método create\+Graph Método dedicado a representar el grafo con una matriz de adyacencia. \end{DoxyCompactList}\item 
+void {\bf imprimir\+Grafo} (int orden\+Matriz, int $\ast$$\ast$matriz\+Adyacencia)
+\item 
+int {\bf vertice\+Final} (int peso\+Buscado, int $\ast$$\ast$matriz\+Adyacencia, int orden\+Matriz)
+\begin{DoxyCompactList}\small\item\em Método vertice\+Final. \end{DoxyCompactList}\item 
+int {\bf vertice\+Inicial} (int peso\+Buscado, int $\ast$$\ast$matriz\+Adyacencia, int orden\+Matriz)
+\item 
+void {\bf Make\+Set} (int num\+Vertices, int padre[$\,$])
+\begin{DoxyCompactList}\small\item\em Método Make\+Set. \end{DoxyCompactList}\item 
+int {\bf Find} (int vertice, int padre[$\,$])
+\begin{DoxyCompactList}\small\item\em Método Find. \end{DoxyCompactList}\item 
+bool {\bf same\+Tree} (int vertice\+Primero, int vertice\+Segundo, int padre[$\,$])
+\item 
+void {\bf Union} (int vertice\+Primero, int vertice\+Segundo, int padre[$\,$])
+\begin{DoxyCompactList}\small\item\em Método Union. \end{DoxyCompactList}\item 
+int {\bf kruskal} (int cant\+Vertices, int cant\+Arista, char $\ast$$\ast$argv, int $\ast$$\ast$ptr\+Matriz\+Adyacente)
+\begin{DoxyCompactList}\small\item\em Método kruskal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{kruskal.\+h@{kruskal.\+h}!create\+Graph@{create\+Graph}}
+\index{create\+Graph@{create\+Graph}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{create\+Graph}]{\setlength{\rightskip}{0pt plus 5cm}void create\+Graph (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{int $\ast$$\ast$}]{matriz\+Adyacencia}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_aa6735378334f9826586ebee97bd13738}
+
+
+Método create\+Graph Método dedicado a representar el grafo con una matriz de adyacencia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$$\ast$} & argv Arreglo de los pesos entre los vertices del grafo. \\
+\hline
+{\em int$\ast$$\ast$} & matriz\+Adyacencia Puntero doble para crear la matriz cuadrada. \\
+\hline
+\end{DoxyParams}
+\index{kruskal.\+h@{kruskal.\+h}!Find@{Find}}
+\index{Find@{Find}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{Find}]{\setlength{\rightskip}{0pt plus 5cm}int Find (
+\begin{DoxyParamCaption}
+\item[{int}]{vertice, }
+\item[{int}]{padre[$\,$]}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_a6e042b9bab3aab5165fb3cad2db8a45f}
+
+
+Método Find. 
+
+Método recursivo, encuentra el padre de un vértice. 
+\begin{DoxyParams}{Parameters}
+{\em int} & vertice Vertice a encontrar el padre. \\
+\hline
+{\em int} & padre[] Arreglo que indica el padre de cada vértice. \\
+\hline
+\end{DoxyParams}
+\index{kruskal.\+h@{kruskal.\+h}!imprimir\+Grafo@{imprimir\+Grafo}}
+\index{imprimir\+Grafo@{imprimir\+Grafo}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{imprimir\+Grafo}]{\setlength{\rightskip}{0pt plus 5cm}void imprimir\+Grafo (
+\begin{DoxyParamCaption}
+\item[{int}]{orden\+Matriz, }
+\item[{int $\ast$$\ast$}]{matriz\+Adyacencia}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_aa25a70df2720bb0e95eac39ef22650d6}
+\index{kruskal.\+h@{kruskal.\+h}!kruskal@{kruskal}}
+\index{kruskal@{kruskal}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{kruskal}]{\setlength{\rightskip}{0pt plus 5cm}int kruskal (
+\begin{DoxyParamCaption}
+\item[{int}]{cant\+Vertices, }
+\item[{int}]{cant\+Arista, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{int $\ast$$\ast$}]{matriz\+Adyacencia}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_a49dcd4a76a548dfb50aac0274fd9504e}
+
+
+Método kruskal. 
+
+Método del algoritmo kruskal. 
+\begin{DoxyParams}{Parameters}
+{\em int} & cant\+Vertices Cantidad de vertices del grafo. \\
+\hline
+{\em int} & cant\+Arista Cantidad de aristas entre los vértices del grafo. \\
+\hline
+{\em int$\ast$$\ast$} & matriz\+Adyacencia Puntero a la matriz de adyacencia. \\
+\hline
+{\em char$\ast$$\ast$} & argv Arreglo de los pesos del grafo. \\
+\hline
+\end{DoxyParams}
+Se crean arreglos para inicializar la estructura union-\/find y demas variables
+
+Se crean arreglos sólo tomando en cuenta las aristas, entiendase se desprecian los valores nulos de la matriz de adyacencia.
+
+Para cada arista E que une los vertices U y V
+
+Puntos U y V
+
+Si los puntos U y V no estan en la misma componente, evitar ciclos cerrados
+
+Agregar arista E al M\+S\+T y se realiza la union de U y V
+
+Para que no halla datos aleatorios si una arista no es tomada en cuenta
+
+Se preparan las salidas tanto en la terminal como escrito en un archivo para la interfaz grafica.\index{kruskal.\+h@{kruskal.\+h}!Make\+Set@{Make\+Set}}
+\index{Make\+Set@{Make\+Set}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{Make\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+Set (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Vertices, }
+\item[{int}]{padre[$\,$]}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_a0ce03512cc6bc9747c16620f6028a56a}
+
+
+Método Make\+Set. 
+
+Método que inicializa la estructura conjuntos disjuntos. Nombra el vértice padre de cada vertice como él mismo. 
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+Vertices Cantidad de vertices en el grafo. \\
+\hline
+{\em int} & padre[] Arreglo donde indica el padre de cada vertice. \\
+\hline
+\end{DoxyParams}
+\index{kruskal.\+h@{kruskal.\+h}!same\+Tree@{same\+Tree}}
+\index{same\+Tree@{same\+Tree}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{same\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}bool same\+Tree (
+\begin{DoxyParamCaption}
+\item[{int}]{vertice\+Primero, }
+\item[{int}]{vertice\+Segundo, }
+\item[{int}]{padre[$\,$]}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_ae077a33a0af79c7f35a83154bedda6fa}
+\index{kruskal.\+h@{kruskal.\+h}!Union@{Union}}
+\index{Union@{Union}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{Union}]{\setlength{\rightskip}{0pt plus 5cm}void Union (
+\begin{DoxyParamCaption}
+\item[{int}]{vertice\+Primero, }
+\item[{int}]{vertice\+Segundo, }
+\item[{int}]{padre[$\,$]}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_aaa89b1aa1f6d2749eca43d84d8fa6a5a}
+
+
+Método Union. 
+
+Encargado de unir dos conjuntos de vértices. Hace uso del método Find para unir los padres del conjunto. 
+\begin{DoxyParams}{Parameters}
+{\em int} & vertice\+Primero Primer vértice a unir. \\
+\hline
+{\em int} & vertice\+Segundo Segundo vértice a unir con el primero. \\
+\hline
+{\em int} & padre[] Arreglo que indica el padre de cada vértice. \\
+\hline
+\end{DoxyParams}
+\index{kruskal.\+h@{kruskal.\+h}!vertice\+Final@{vertice\+Final}}
+\index{vertice\+Final@{vertice\+Final}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{vertice\+Final}]{\setlength{\rightskip}{0pt plus 5cm}int vertice\+Final (
+\begin{DoxyParamCaption}
+\item[{int}]{peso\+Buscado, }
+\item[{int $\ast$$\ast$}]{matriz\+Adyacencia, }
+\item[{int}]{orden\+Matriz}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_a012b2c94ad847dbd1d9875ecbb01509d}
+
+
+Método vertice\+Final. 
+
+El objetivo de este Método es encontrar el vertice donde terminauna arista especifica. Por convencion, las aristas terminan con el vértice columna de la matriz. 
+\begin{DoxyParams}{Parameters}
+{\em int} & peso\+Buscado Arista a buscar su punto final. \\
+\hline
+{\em int$\ast$$\ast$} & matriz\+Adyacencia Matriz que representa le grafo. \\
+\hline
+{\em int} & orden\+Matriz Orden de la matriz de adyacencia. \\
+\hline
+\end{DoxyParams}
+\index{kruskal.\+h@{kruskal.\+h}!vertice\+Inicial@{vertice\+Inicial}}
+\index{vertice\+Inicial@{vertice\+Inicial}!kruskal.\+h@{kruskal.\+h}}
+\subsubsection[{vertice\+Inicial}]{\setlength{\rightskip}{0pt plus 5cm}int vertice\+Inicial (
+\begin{DoxyParamCaption}
+\item[{int}]{peso\+Buscado, }
+\item[{int $\ast$$\ast$}]{matriz\+Adyacencia, }
+\item[{int}]{orden\+Matriz}
+\end{DoxyParamCaption}
+)}\label{kruskal_8h_a66e8d5b6ee2eb132447adb327edc772f}
