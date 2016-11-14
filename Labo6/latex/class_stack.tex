@@ -1,0 +1,108 @@
+\section{Stack$<$ type\+Stack $>$ Class Template Reference}
+\label{class_stack}\index{Stack$<$ type\+Stack $>$@{Stack$<$ type\+Stack $>$}}
+
+
+Template \doxyref{Stack}{p.}{class_stack}.  
+
+
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+
+
+Collaboration diagram for Stack$<$ type\+Stack $>$\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf push} (type\+Stack number)
+\begin{DoxyCompactList}\small\item\em Funcion push. \end{DoxyCompactList}\item 
+void {\bf pop} ()
+\begin{DoxyCompactList}\small\item\em Funcion pop. \end{DoxyCompactList}\item 
+type\+Stack {\bfseries peek} ()\label{class_stack_a7375f3dfe21983c1976fd1ef36fe1f49}
+
+\item 
+int {\bf size} ()
+\begin{DoxyCompactList}\small\item\em Funcion size. \end{DoxyCompactList}\item 
+bool {\bf is\+Stack\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Funcion is\+Empty. \end{DoxyCompactList}\item 
+void {\bfseries clear} ()\label{class_stack_a8f8ec7ad44874e68a00a8e31f09c1145}
+
+\item 
+void {\bfseries Delete} ()\label{class_stack_a8d2ec0205b5c9b4926868903c646e24c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Lista\+Con\+Arreglo}$<$ type\+Stack $>$ $\ast$ {\bfseries pila\+Con\+Arreglo}\label{class_stack_a552b70e548f3d38f159fe4cf10a88637}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename type\+Stack$>$\\*
+class Stack$<$ type\+Stack $>$}
+
+Template \doxyref{Stack}{p.}{class_stack}. 
+
+Esta clase plantilla posee un constructor y un destructor. Posee un puntero a un objeto de tipo \doxyref{Lista}{p.}{class_lista} y reimplementa ciertos metodos de \doxyref{Lista.\+h}{p.}{_lista_8h} 
+
+\subsection{Member Function Documentation}
+\index{Stack@{Stack}!is\+Stack\+Empty@{is\+Stack\+Empty}}
+\index{is\+Stack\+Empty@{is\+Stack\+Empty}!Stack@{Stack}}
+\subsubsection[{is\+Stack\+Empty()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type\+Stack $>$ bool {\bf Stack}$<$ type\+Stack $>$\+::is\+Stack\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_a8d2c6717c58f4db79ebc9360d09eb797}
+
+
+Funcion is\+Empty. 
+
+Funcion que dice si la pila está vacia. \index{Stack@{Stack}!pop@{pop}}
+\index{pop@{pop}!Stack@{Stack}}
+\subsubsection[{pop()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type\+Stack $>$ void {\bf Stack}$<$ type\+Stack $>$\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_a66feff17b91836487fbbd2a7076b2269}
+
+
+Funcion pop. 
+
+Funcion para eliminar elementos en una pila, siempre se debe retirar el ultimo que se agrego. \index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\subsubsection[{push(type\+Stack number)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type\+Stack $>$ void {\bf Stack}$<$ type\+Stack $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{type\+Stack$<$ type\+Stack $>$}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_ace33ac171812a3d7aa6ae577464e28ce}
+
+
+Funcion push. 
+
+Funcion para agregar elementos en una cola, funciona igual que en una lista cualquiera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & tipo type\+Stack, es el elemento que se desea agregar. \\
+\hline
+\end{DoxyParams}
+\index{Stack@{Stack}!size@{size}}
+\index{size@{size}!Stack@{Stack}}
+\subsubsection[{size()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type\+Stack $>$ int {\bf Stack}$<$ type\+Stack $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_stack_a8088b58f98a2afcb4fa6ce523e60fa69}
+
+
+Funcion size. 
+
+Funcion para que devuelve el tamaño o la cantidad de elementos que hay en la pila. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stack.\+h\end{DoxyCompactItemize}

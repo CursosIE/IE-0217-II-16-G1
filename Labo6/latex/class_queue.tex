@@ -1,0 +1,112 @@
+\section{Queue$<$ type $>$ Class Template Reference}
+\label{class_queue}\index{Queue$<$ type $>$@{Queue$<$ type $>$}}
+
+
+Template \doxyref{Queue}{p.}{class_queue}.  
+
+
+
+
+{\ttfamily \#include $<$queue.\+h$>$}
+
+
+
+Collaboration diagram for Queue$<$ type $>$\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf size} ()
+\begin{DoxyCompactList}\small\item\em Funcion size. \end{DoxyCompactList}\item 
+void {\bf insert} (type number)
+\begin{DoxyCompactList}\small\item\em Funcion insert. \end{DoxyCompactList}\item 
+type {\bf remove\+Data} ()
+\begin{DoxyCompactList}\small\item\em Funcion remove\+Data. \end{DoxyCompactList}\item 
+bool {\bf is\+Queue\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Funcion is\+Queue\+Empty. \end{DoxyCompactList}\item 
+void {\bf Delete} ()
+\begin{DoxyCompactList}\small\item\em Funcion Delete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Lista\+Con\+Arreglo}$<$ type $>$ $\ast$ {\bfseries queue\+Array}\label{class_queue_a6aa6e2ecba61c010cc118dc232df753c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename type$>$\\*
+class Queue$<$ type $>$}
+
+Template \doxyref{Queue}{p.}{class_queue}. 
+
+Esta clase plantilla posee un constructor y un destructor. Posee un puntero a un objeto de tipo \doxyref{Lista}{p.}{class_lista} y reimplementa ciertos metodos de \doxyref{Lista.\+h}{p.}{_lista_8h} 
+
+\subsection{Member Function Documentation}
+\index{Queue@{Queue}!Delete@{Delete}}
+\index{Delete@{Delete}!Queue@{Queue}}
+\subsubsection[{Delete()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void {\bf Queue}$<$ type $>$\+::Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_a44988784d096f982c12cc40e4e8d7fc5}
+
+
+Funcion Delete. 
+
+Funcion que elimina el queue. \index{Queue@{Queue}!insert@{insert}}
+\index{insert@{insert}!Queue@{Queue}}
+\subsubsection[{insert(type number)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void {\bf Queue}$<$ type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{type}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_abd5d097c8349c94316ec1f1325fd4ab3}
+
+
+Funcion insert. 
+
+Funcion para agregar elementos en una cola, funciona igual que en una lista cualquiera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & tipo type, es el elemento que se desea agregar. \\
+\hline
+\end{DoxyParams}
+\index{Queue@{Queue}!is\+Queue\+Empty@{is\+Queue\+Empty}}
+\index{is\+Queue\+Empty@{is\+Queue\+Empty}!Queue@{Queue}}
+\subsubsection[{is\+Queue\+Empty()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ bool {\bf Queue}$<$ type $>$\+::is\+Queue\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_a7e2ee5059f627d92117ef9c31bb1b94c}
+
+
+Funcion is\+Queue\+Empty. 
+
+Funcion que dice si la cola está vacia. \index{Queue@{Queue}!remove\+Data@{remove\+Data}}
+\index{remove\+Data@{remove\+Data}!Queue@{Queue}}
+\subsubsection[{remove\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ type {\bf Queue}$<$ type $>$\+::remove\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_ab2bfb3d023599e9a107ef68d718aed76}
+
+
+Funcion remove\+Data. 
+
+Funcion para eliminar elementos en una cola, siempre se debe retirar el primero que se agrego. \index{Queue@{Queue}!size@{size}}
+\index{size@{size}!Queue@{Queue}}
+\subsubsection[{size()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ int {\bf Queue}$<$ type $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_queue_a78e6bd608fd4e4a73e7a19f0ca910634}
+
+
+Funcion size. 
+
+Funcion para que devuelve el tamaño o la cantidad de elementos que hay en la cola. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+{\bf queue.\+h}\end{DoxyCompactItemize}

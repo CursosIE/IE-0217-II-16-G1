@@ -1,0 +1,108 @@
+\section{grafo.\+h File Reference}
+\label{grafo_8h}\index{grafo.\+h@{grafo.\+h}}
+
+
+Header \doxyref{grafo.\+cpp}{p.}{grafo_8cpp}.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf add\+Vertex} (char label)
+\begin{DoxyCompactList}\small\item\em Funcion add\+Vertex. \end{DoxyCompactList}\item 
+void {\bf add\+Edge} (int start, int end, int $\ast$$\ast$adj\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funcion add\+Edge. \end{DoxyCompactList}\item 
+void {\bf display\+Vertex} (int vertex\+Index)
+\begin{DoxyCompactList}\small\item\em Funcion display\+Vertex. \end{DoxyCompactList}\item 
+int {\bf get\+Adj\+Unvisited\+Vertex} (int vertex\+Index, int $\ast$$\ast$adj\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funcion get\+Adj\+Unvisited\+Vertex. \end{DoxyCompactList}\item 
+void {\bf depth\+First\+Search} (int $\ast$$\ast$adj\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funcion depth\+Fist\+Search. \end{DoxyCompactList}\item 
+void {\bf breadth\+First\+Search} (int $\ast$$\ast$adj\+Matrix)
+\begin{DoxyCompactList}\small\item\em Funcion depth\+Fist\+Search. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header \doxyref{grafo.\+cpp}{p.}{grafo_8cpp}. 
+
+\begin{DoxyAuthor}{Author}
+Brizuela M, Morera B 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1 Noviembre 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{grafo.\+h@{grafo.\+h}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{add\+Edge(int start, int end, int $\ast$$\ast$adj\+Matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void add\+Edge (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{end, }
+\item[{int $\ast$$\ast$}]{adj\+Matrix}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a8123e47d34f77903e774ee0a4d2be74b}
+
+
+Funcion add\+Edge. 
+
+Define que vertices se conectan por medio de aristas. El grafo se implementa en este metodo, por medio de una matriz de adyacencia. \index{grafo.\+h@{grafo.\+h}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{add\+Vertex(char label)}]{\setlength{\rightskip}{0pt plus 5cm}void add\+Vertex (
+\begin{DoxyParamCaption}
+\item[{char}]{label}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a446195aea2f671e8988b7656916e1663}
+
+
+Funcion add\+Vertex. 
+
+Agrega un vertice en la lista de vertices \index{grafo.\+h@{grafo.\+h}!breadth\+First\+Search@{breadth\+First\+Search}}
+\index{breadth\+First\+Search@{breadth\+First\+Search}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{breadth\+First\+Search(int $\ast$$\ast$adj\+Matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void breadth\+First\+Search (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{adj\+Matrix}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a8c4f273672a857c60b27e4449ebc4897}
+
+
+Funcion depth\+Fist\+Search. 
+
+Realiza la busqueda por ancho. Se vale de la matriz de adyacencia. \index{grafo.\+h@{grafo.\+h}!depth\+First\+Search@{depth\+First\+Search}}
+\index{depth\+First\+Search@{depth\+First\+Search}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{depth\+First\+Search(int $\ast$$\ast$adj\+Matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void depth\+First\+Search (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$}]{adj\+Matrix}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_a9fcbd4b9e711d54460bd27ea40a49185}
+
+
+Funcion depth\+Fist\+Search. 
+
+Realiza la busqueda por profundidad. Se vale de la matriz de adyacencia. \index{grafo.\+h@{grafo.\+h}!display\+Vertex@{display\+Vertex}}
+\index{display\+Vertex@{display\+Vertex}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{display\+Vertex(int vertex\+Index)}]{\setlength{\rightskip}{0pt plus 5cm}void display\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex\+Index}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_aeed462c296cae8bd91be4c5f86827c11}
+
+
+Funcion display\+Vertex. 
+
+Muestra el vertice. \index{grafo.\+h@{grafo.\+h}!get\+Adj\+Unvisited\+Vertex@{get\+Adj\+Unvisited\+Vertex}}
+\index{get\+Adj\+Unvisited\+Vertex@{get\+Adj\+Unvisited\+Vertex}!grafo.\+h@{grafo.\+h}}
+\subsubsection[{get\+Adj\+Unvisited\+Vertex(int vertex\+Index, int $\ast$$\ast$adj\+Matrix)}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Adj\+Unvisited\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{vertex\+Index, }
+\item[{int $\ast$$\ast$}]{adj\+Matrix}
+\end{DoxyParamCaption}
+)}\label{grafo_8h_af69fc611558642d28c442e5f1e553586}
+
+
+Funcion get\+Adj\+Unvisited\+Vertex. 
+
+Obtiene la posicion del verice que no ha sido visitado. 
