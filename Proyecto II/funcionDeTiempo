@@ -1,0 +1,129 @@
+#include <iostream>
+#include <stdlib.h>   /*atof*/
+#include <math.h>     /*pow*/
+#include <fstream>
+#include <sstream>
+#include <cstdlib>
+#include "metodoGradiente.h"
+
+using namespace std;
+
+string ftoa(float n){
+  stringstream ss;
+  string s;
+  ss << n;
+  ss >> s;
+  return s;
+}
+
+// n  -> ordenPol
+
+void derivarPolinomios(float* derPolI, float* derPolII, float* polinomioI, float* polinomioII, int ordenPol){
+  for (int valor = 0; valor < ordenPol; valor++) {									//n*
+    derPolI[valor] = (valor + 1)*polinomioI[valor + 1];  						//2(2 acceso y  1 compara)
+    derPolII[valor] = (valor + 1)*polinomioII[valor + 1];
+  }
+}
+
+/*
+derivarPolinomios: 6*n
+*/
+
+void obtenerDirDescenso(int ordenPol, float* dirDescenso, float* ptInicio, float* derPolI, float* derPolII){
+  //Se inicia con una direccion de cero
+  dirDescenso[0] = 0.0;														//2(acceso y asignar)
+  dirDescenso[1] = 0.0;
+  for (int x = 0; x < ordenPol-1; x++) {								//n*									************
+    dirDescenso[0] += pow(ptInicio[0],x)*derPolI[x];				// acceso, acceso pow, acceso, asignar
+    dirDescenso[1] += pow(ptInicio[1],x)*derPolII[x];				// acceso, acceso pow, acceso, asignar
+  }
+  //Se multiplica por un negativo
+  dirDescenso[0] = -1*dirDescenso[0];									// acceso, acceso, asignar
+  dirDescenso[1] = -1*dirDescenso[1];									// acceso, acceso, asignar
+}
+	
+/*
+obtenerDirDescenso: 8*n + 6
+*/
+
+void metodoGradiente(float* polinomioI, float* polinomioII, int ordenPol, float* ptInicio, int maxIter, float* ptMinimo){
+
+  clock_t t_ini, t_fin;
+  t_ini = clock();  
+
+  int iter = 0;														//inicializar asignar
+  bool minEncontrado = false;										//inicializar ''
+  float pasoDescenso = 0.0;										//inicializar '' 
+  float *derPolI = new float[ordenPol - 1];					//inicializar ''
+  float *derPolII = new float[ordenPol - 1];					//inicializar ''
+  float *dirDescenso = new float[2];							//inicializar ''
+  float *dirDescensoTest = new float[2];						//inicializar ''
+  float *ptPasoInicio = new float[2];							//inicializar ''      16
+  //Se crea el archivo que contiene las salidas del al trayectoria  
+  ofstream fs("trayectoriaMin.txt");																		//	**********
+
+  //Se deriva los polinomios
+  derivarPolinomios(derPolI, derPolII, polinomioI, polinomioII, ordenPol);					// derivar: 6n
+  fs << ftoa(ptMinimo[0]);																					//*********
+  fs << " ";
+  fs << ftoa(ptMinimo[1]);
+  fs << " ";
+
+  while( iter != maxIter && !minEncontrado) {														// interaciones = i
+    iter++;
+    //Se obtiene el punto a descender, los valores se guardan en el puntero dirDescenso
+    obtenerDirDescenso(ordenPol, dirDescenso, ptInicio, derPolI, derPolII); 				// 8n + 6
+
+    pasoDescenso += 0.1;															//asignar
+    //Se realiza un paso
+    ptPasoInicio[0] = ptInicio[0] + pasoDescenso*dirDescenso[0];    //X_k+1				//3 accesos, asignar
+    ptPasoInicio[1] = ptInicio[1] + pasoDescenso*dirDescenso[1];								// ''   ''
+    ptInicio[0] = ptPasoInicio[0];																		// 2 accesos, asignar
+    ptInicio[1] = ptPasoInicio[1];																		//  '' ''
+
+    for(int i = 0; i<2; i++){																				// n*
+      fs << ftoa(ptInicio[i]);																		//	**********
+      fs << " ";
+    }
+
+    //Se comprueba que la pendiente sea cero
+    obtenerDirDescenso(ordenPol, dirDescensoTest, ptInicio, derPolI, derPolII); 				// 8n + 6
+    if ( dirDescensoTest[0] == 0.0 && dirDescensoTest[1] == 0.0 ){								// 2 accesos, 2 comparaciones
+      minEncontrado = true;																					// asignar 1
+      cout << "Condicion parada: pendiente cero" << endl; 										//	**********
+    }
+  }
+	
+	// while: i*(8n+6 +  12 +8n+6+ 5) = 10*n*i + 29*i
+  fs.close();
+
+
+  if (!minEncontrado) {																						
+    cout << "Condicion parada: maxima iteracion" << endl;								
+  }
+  t_fin = clock(); 
+  cout << "Punto Solucion ABSOLUTO: " << ptMinimo[0] << ", " << ptMinimo[1] << endl;
+  cout << "Punto Solucion ENCONTRADO: " << ptPasoInicio[0] << ", " << ptPasoInicio[1] << endl;
+  cout << "Diferencia entre los puntos: " << ptMinimo[0]-ptPasoInicio[0] << ", " << ptMinimo[1]-ptPasoInicio[1] << endl;
+
+  double secs = (double)(t_fin - t_ini) / CLOCKS_PER_SEC;
+  cout << "\n\n" << endl;
+  cout << "Tiempo Ejecucion Metodo Gradiente: " << secs*1000 << " milisegundos" << endl;
+  cout << "\n\n" << endl;
+
+  delete derPolI;
+  delete derPolII;
+  delete dirDescenso;
+  delete dirDescensoTest;
+  delete ptPasoInicio;
+}
+
+
+
+********************************************************************************************
+					   				IMPLEMENTACION DE GRADIENTE
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_16n*i+6n+29i+16_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+********************************************************************************************
+

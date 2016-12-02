@@ -1,0 +1,51 @@
+\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Main del Proyecto.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}metodo\+Gradiente.\+h\char`\"{}}\\*
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf main} (int argc, char const $\ast$argv[$\,$])
+\begin{DoxyCompactList}\small\item\em Funcion main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main del Proyecto. 
+
+\begin{DoxyAuthor}{Author}
+Brizuela M, Morera B, Rojas A. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26 Noviembre 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main(int argc, char const $\ast$argv[])}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char const $\ast$}]{argv[$\,$]}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}
+
+
+Funcion main. 
+
+Funcion main. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & Entero de la cantidad de parametros recividos por linea de comandos \\
+\hline
+{\em argv} & Puntero doble que contiene los parametros recividos por linea de comandos \\
+\hline
+\end{DoxyParams}

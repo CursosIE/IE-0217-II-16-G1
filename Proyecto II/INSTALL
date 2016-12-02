@@ -1,0 +1,14 @@
+* Debe instalarse el paquete "gnuplot", antes de correr el programa.
+* Para correr el programa debe correr el Makefile de la siguiente manera:
+		-all: genera el ejecutable (correrGradiente)
+		-clean: elimina el ejecutable.
+		-run: corre el ejecutable con conjunto de parametros empotrados.
+* Para ingresar los parametros en por linea de comandos, debe cumplirse el siguiente orden
+    --Parametros: ordenPolinomios primerPolinomio segundoPolinomio ptInicial iteraciones ptSolucionReal
+    -El primer numero es el orden de los polinomios, son dos ya que se trabajara solo con 2 variables (x1, x2): 2
+    -Los siguientes 3 son el primer polinomio: 0 + 4*x + x**2
+    -Los siguientes 3 son el segundo polinomio: 0 + -4*x + 2*x**2
+    -Los siguientes numero son el punto inicial: (x1, x2) = (1,1)
+    -El penultimo parametro, es el numero es el maximo de iteraciones: iteraciones = 2
+		-El ultimo par de numeros es el punto de la solucion de la funcion, el minimo: -2 1
+		./correrGradiente 2 0 4 1 0 -4 2 1 1 2 -2 1

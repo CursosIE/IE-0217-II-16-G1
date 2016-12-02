@@ -1,0 +1,4 @@
+ - En la carpeta latex se encuentra la documentacion generada por doxywizard, los archivos 
+necesarios para su generacion del .pdf junto con su makefile.
+ - En la carpeta html se encuentra la documentación por doxywizard.
+ - Para compilar los script se debe correr el Makefile en el mismo directorio.
